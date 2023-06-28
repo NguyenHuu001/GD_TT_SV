@@ -1,0 +1,386 @@
+:root{
+    --color_mac_dinh: blue;
+}
+.wraper{
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma !important;
+
+
+
+    /* NAV  */
+    .nav{
+        width: 100%;
+        height: 60px;
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        justify-content: center;
+        box-shadow: 0 0 8px #888888;
+        z-index: 10;
+        /* HEADER  */
+        .header{
+            display: flex;
+            width: 100%;
+            padding:0 120px;
+            height: 60px;
+            top: 0;
+            background-color: white;
+            justify-content: space-between;
+            align-items: center;
+    
+            /* HEADER  LEFT*/
+            .header_left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+                .header_left_logo,
+                .header_left_logo img{
+                    width: 184px;
+                    height: 40px;
+                }
+    
+                .header_left_search{
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+    
+                    .header_left_input{
+                        position: relative;
+                        left: 10px;
+                        width: 280px;
+                        height: 30px;
+                        border-radius: 20px !important;
+                        outline: none;
+                        padding: 0px 0px 0px 10px;
+                        border: 1px solid #bdbdbd;
+                        
+                    }
+                    
+                    .header_left_input:focus{
+                        border-color: #888;  
+                    }
+    
+                    .fa-solid{
+                        right: 0;
+                        position: absolute;
+                        z-index: 1;
+                    }
+    
+                }
+    
+                /* HOVER icon search  */
+                .header_left_search:hover > i{
+                    cursor: pointer;
+                }
+            }
+    
+            /* HEADER  RIGHT */
+            .header_right{
+                display: flex;
+                width: 387px;
+                height: 60px;
+                justify-content: space-evenly;
+                align-items: center;
+    
+                .header_right_items{
+                    display: flex;
+                    text-decoration: none;
+                    justify-content: center;
+                    align-items: center;
+    
+                    
+                    .header_right_items_avatar{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50% !important;
+                        object-fit: cover;
+                    }
+                    .space{
+                        margin-right: 5px;
+                    }
+                    
+                }
+                
+                .header_right_items:nth-child(1),
+                .header_right_items:nth-child(2){
+                    font-weight: 100;
+                    font-size: 11px;
+                    color: #667580;
+                }
+                .header_right_items:last-child{
+                    font-weight: 200;
+                    font-size: 13px;
+                    line-height: normal ;
+                    color: #667580;
+                }
+            }
+        
+            
+        
+            
+        }
+    }
+
+
+    /* --------------------------BODY ----------------------- */
+
+    .body{
+        position: relative;
+        top: 50px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e7ecf0;
+        
+        .Body_top{
+            position: absolute;
+            top: 15px;
+            width: 1230px;
+            height: 260px;
+            display: flex;
+            justify-content: space-evenly;
+
+            /* <!-- Thông tin sinh viên  --> */
+            .information_SV{
+                width: 674px;
+                height: 230px ;
+                background-color: #ffffff;
+                border-radius: 5px;
+                display: flex;
+                flex-direction: column;
+                padding: 10px;
+                box-shadow: 0 0 8px #d2cece;
+                .information_SV_title{
+                    width: 674px;
+                    height: 41px;
+                    display: flex;
+                    margin: 0;
+                    color: var(--color_mac_dinh);
+                    border-bottom:1px solid #eae4e4;
+                }
+                /* <!-- Khối tổng --> */
+                .KhoiTong{
+                    display: flex;
+                    flex-direction: row;
+
+                    /* <!-- Khối avartar --> */
+                    .avatar{
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+                        margin-top: 15px;
+
+                        .avatar_avatar{
+                            width: 120px;
+                            height: 120px;
+                            object-fit: cover;
+                            border-radius: 50%;
+                            margin: 0 14px 10px 14px;
+                        }
+                        .avatar_chitiet{
+                            text-decoration: none;
+                            color: var(--color_mac_dinh);
+                            font-size: 12px;
+                        }
+                        .avatar_chitiet:hover{
+                            opacity: 0.5;
+                        }
+                    }
+
+                    /* <!-- Khối thông tin 1 --> */
+                    .information_SV_one{
+                        flex: 1;
+
+                        .information_SV_one_ul{
+                            list-style: none;
+                            position: relative;
+                            top: 20px;
+                            flex: 1;
+                            
+                            .information_SV_one_items{
+                                margin-bottom: 15px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+
+                    /* <!-- Khối thông tin 2 --> */
+
+                    .information_SV_two{
+                        flex: 1;
+
+                        .information_SV_two_ul{
+                            list-style: none;
+                            position: relative;
+                            top: 20px;
+                            flex: 1;
+                            .information_SV_two_items{
+                                margin-bottom: 15px;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            /* <!-- Thông báo, lịch học/thi  --> */
+            .general_annoucement{
+                width: 480px;
+                height: 260px;
+                z-index: 1;
+                /* display: flex;
+                flex-direction: column; */
+                /* <!-- Thông báo  --> */
+                .Notification{
+                    box-shadow: 0 0 8px #d2cece;
+                    position: relative;
+                    width: 436px;
+                    height: 86px;
+                    padding: 15px;
+                    margin-bottom: 15px;
+                    background-color: white;
+
+                    .Notification_title{
+                        margin: 5px 0px 5px 0px;
+                    }
+
+                    .Notification_body{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        height: 40px;
+
+                        .Notification_body_Number{
+                            font-size: 40px;
+                            color: #667580;
+                        }
+                        
+                        .baoquanh{
+                            display: flex;
+                            width: 30px;
+                            height: 30px;
+                            border: 1px solid black;
+                            justify-content: center;
+                            align-items: center;
+                            border-radius: 50%;
+                        }
+                    }
+                    .Notification_chitiet{
+                        color: var(--color_mac_dinh);
+                        text-decoration: none;
+                        font-size: 12px;
+                    }
+                    .Notification_chitiet:hover{
+                        opacity: 0.5;
+                    }
+                }
+
+                /* <!-- DIV CHUNG --> */
+                .lichhoc_lichthi{
+                    display: flex;
+                    width: 466px;
+                    justify-content: space-between;
+                    /* <!-- Lịch học  --> */
+                    .Schedule{
+                        position: relative;
+                        width: 195px;
+                        height: 89px;
+                        padding: 15px;
+                        box-shadow: 0 0 8px #d2cece;
+                        border-radius: 5px;
+                        background-color: #e0fbff;
+                        z-index: 1;
+
+
+                        .Schedule_title{
+                            margin-top: 0;
+                            font-size: 13px;
+                            color: var(--color_mac_dinh);
+                        }
+
+                        .Schedule_body{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 40px;
+                            .Schedule_body_Number{
+                                font-size: 40px;
+                                color: var(--color_mac_dinh);
+                            }
+                        }
+                        
+                        .Schedule_chitiet{
+                            text-decoration: none;
+                            font-size: 12px;
+                            color: var(--color_mac_dinh);
+                            position: relative;
+                            margin-bottom: -1px;
+                        }
+                        .Schedule_chitiet:hover{
+                            opacity: 0.5;
+                        }
+                        
+                    }
+                    .Schedule:hover{
+                        cursor: pointer;
+                    }
+                    /* <!-- Lịch thi --> */
+                    .Test_schedule{
+                        position: relative;
+                        width: 195px;
+                        height: 89px;
+                        padding: 15px;
+                        border-radius: 5px;
+                        background-color: #fff2d4;
+                        z-index: 1;
+                        box-shadow: 0 0 8px #d2cece;
+                        
+                        .Test_schedule_title{
+                            margin-top: 0;
+                            font-size: 13px;
+                            color: #ff9205;
+                        }
+
+                        .Test_schedule_body{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            height: 40px;
+
+                            .Test_schedule_body_Number{
+                                font-size: 40px;
+                                color: #ff9205;
+                            }
+                        }
+                        .Test_schedule_chitiet{
+                            text-decoration: none;
+                            color: #ff9205;
+                            font-size: 12px;
+                        }
+                        
+                    }
+                    .Test_schedule:hover{
+                        cursor: pointer;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    
+    
+    
+    
+
+   
+}
+
