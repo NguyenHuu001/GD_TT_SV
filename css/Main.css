@@ -3,7 +3,7 @@
 }
 .wraper{
     width: 100%;
-    height: 100vh;
+    height: 900px;
     margin: 0;
     padding: 0;
     font-family: Tahoma !important;
@@ -20,6 +20,7 @@
         left: 0;
         justify-content: center;
         box-shadow: 0 0 8px #888888;
+        flex-wrap: wrap;
         z-index: 10;
         /* HEADER  */
         .header{
@@ -134,12 +135,13 @@
         position: relative;
         top: 50px;
         width: 100%;
-        height: 100vh;
+        height: 900px;
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: #e7ecf0;
-        
+
         .Body_top{
             position: absolute;
             top: 15px;
@@ -375,12 +377,125 @@
                 
             }
         }
-    }
-    
-    
-    
-    
 
-   
+        /* --------------------Body_Mid--------------- */
+        
+        .Body_mid{
+            display: flex;
+            width: 1180px;
+            height: 135px;
+            position: absolute;
+            top: 100%;
+            left: 17px;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap-reverse;
+
+            .Body_mid_items{
+                width: 70px;
+                height: 100px;
+                padding: 10px;
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                text-align: center;
+                font-size: 12px;
+                color: #888888;
+                object-fit: cover;
+                border-radius: 5px;
+                
+            }
+            .Body_mid_items:hover{
+                cursor: pointer;
+            }
+            .Body_mid_items:hover .text_body_mid{
+                opacity: 0.8;
+            }
+            
+            .Body_mid_items > img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .Body_bot{
+            position: absolute;
+            top: 100%;
+            width: 100%;
+
+            /* <!-- Body_bot One   --> */
+            .Body_bot_one{
+                width: 446px;
+                height: 390px;
+                padding: 10px;
+                background-color: white;
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+
+                .Body_bot_one_top{
+                    width: 446px;
+                    height: 46px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border-bottom: 1px solid #e7d3d3;
+                    
+                    .Body_bot_one_top_title{
+                        margin-top: 10px;
+                        color: var(--color_mac_dinh);
+                    }
+                    .Body_bot_one_top_title:hover{
+                        cursor: pointer;
+                        opacity: 0.7;
+                    }
+
+                    .Body_bot_one_HK{
+                        width: 158px;
+                        height: 35px;
+                        border-radius: 3px;
+                        margin-top: -5px;
+                        display: inline-block;
+                        padding: 6px 12px;
+                        outline: none;
+                        border: 1px solid #b9b6b6;
+                    }
+                    .Body_bot_one_HK:focus{
+                        border-color: var(--color_mac_dinh);
+                    }
+                }
+                .Body_bot_one_body{ 
+                    display: flex;
+                    width: 446px;
+                    height: 300px;
+                    justify-content: space-evenly;
+                    align-items: flex-end;
+                    border-bottom: 1px solid black;
+                    
+                    .chart-layout__item{
+                        width: 20px;
+                        height: var(--percent);
+                        background-color: #fa6c51;
+                        text-align: center;
+                        font-size: 10px;
+                        border-radius: 2px 2px 0px 0;
+                        animation: growth linear 1s;
+                    }
+                }
+                
+            }
+        }
+    } 
 }
-
+@keyframes growth{
+    from{
+        opacity: 0;
+        height:0%;
+    }
+    to{
+        opacity: 1;
+        height: var(--percent);
+    }
+}
