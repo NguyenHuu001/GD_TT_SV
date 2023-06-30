@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
     <link rel="stylesheet" href="font/fontawesome-free-6.4.0-web/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="/css/Main.css">
     <title>Cổng thông tin sinh viên</title>
@@ -204,34 +205,182 @@
                 <!-- Body_bot Two    -->
                 <div class="Body_bot_two">
                     <div class="Body_bot_two_top">
-
+                        <h3>Tiến độ học tập</h3>
                     </div>
                     <div class="Body_bot_two_body">
-                        
+                        <div class="VongNgoai">
+                            <div class="VongTrong_one">
+                                <div class="VongTrong_two">
+                                    <h3>Đã học 90 tín chỉ</h3>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <p></p>
                     </div>
+                    <p style="color: #003f65;font-size: 14px;font-weight: bold;text-align: center;"> 90/159</p>
                 </div>
 
                 <!-- Body_bot Three   -->
                 <div class="Body_bot_three">
                     <div class="Body_bot_three_top">
-
+                        <h3 class="Body_bot_three_top_title">Kết quả học tập</h3>
+                        <select name="semesters" id="semesters_select" class="Body_bot_three_HK">
+                            <option value="select_HK">Chọn học kỳ</option>  
+                            <option value="HK1 (2020-2021)">HK1 (2020-2021)</option>
+                            <option value="HK2 (2021-2022)">HK2 (2021-2022)</option>
+                            <option value="HK1 (2022-2023)">HK1 (2022-2023)</option>
+                            <option value="HK2 (2023-2024)">HK2 (2023-2024)</option>
+                            <option value="HK1 (2024-2025)">HK1 (2024-2025)</option>
+                        </select>
                     </div>
                     <div class="Body_bot_three_body">
-                        
+                        <div class="Body_bot_three_body_top">
+                            <p>Môn học phần</p>
+                            <p>Số tín chỉ</p>
+                        </div>
+                        <div class="scroll">
+                            <table class="Body_bot_three_body_table">
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+    
+                                <tr>
+                                    <td>
+                                        <div class="mhp"><a class="mhp_a" href="">010100169524</a></div>
+                                        <div class="tenhp">Giáo dục thể chất 2 (cầu lông)</div>
+                                    </td>
+                                    <td class="so_tc" style="color: #888888; font-size: 13px;">2</td>
+                                </tr>
+                            </table>
+                        </div>
                     </div>
                 </div>
                 
             </div>
             </div>
-
-            
-            </div>
-            
         </div>
-
-        
-
+    </div>
+    <div class="navigation">
+        <a href="" class="navigation_img">
+            <img src="img/menu2.png" alt="">
+        </a>
+        <ul class="navigation_ul">
+            <li class="navigation_li">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-sharp fa-solid fa-house-chimney"></i>
+                    <p>TRANG CHỦ</p>
+                </a>
+            </li>
+            <li class="navigation_li navigation_li-ttc">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-solid fa-display"></i>
+                    <p >THÔNG TIN CHUNG</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                
+            </li>
+            <ul class="navigation_li-ative">
+                <li class="navigation_li-ative_items">
+                    <a href="">Thông tin sinh viên</a>
+                </li>
+                <li class="navigation_li-ative_items">
+                    <a href="">Kê khai thông tin sinh viên</a>
+                </li>
+                <li class="navigation_li-ative_items"
+                ><a href="">Dịch vụ trực tuyến</a>
+                </li>
+                <li class="navigation_li-ative_items">
+                    <a href="">Ghi chú nhắc nhở</a>
+                </li>
+                <li class="navigation_li-ative_items">
+                    <a href="">Đề xuất xét cấp chứng chỉ sinh viên</a>
+                </li>
+                <li class="navigation_li-ative_items">
+                    <a href="">Khảo sát sự kiện</a>
+                </li>
+                <li class="navigation_li-ative_items">
+                    <a href="">Đề xuất xét tốt nghiệp</a>
+                </li>
+            </ul>
+            <li class="navigation_li">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-sharp fa-solid fa-graduation-cap"></i>
+                    <p>HỌC TẬP</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+            <li class="navigation_li">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-solid fa-square-check"></i>
+                    <p>ĐĂNG KÝ HỌC PHẦN</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+            <li class="navigation_li">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <p>HỌC PHÍ</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+            <li class="navigation_li">
+                <a href="#" class="navigation_li_items">
+                    <i class="fa-solid fa-gear"></i>
+                    <p>Khác</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
     
 </div>
+
+
+</script>
 </body>
 </html>
