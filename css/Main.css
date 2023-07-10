@@ -2,6 +2,7 @@
     --color_mac_dinh: #2caffe;
 }
 .wraper{
+    /* overflow: hidden; */
     position: relative;
     width: 100%;
     /* max-width: 100%; */
@@ -531,6 +532,7 @@
                         margin: auto;
                         width: 222px;
                         height: 222px;
+                        border-right: 20px solid transparent;
                         border-radius: 50%;
                         border: 20px solid var(--color_mac_dinh);
 
